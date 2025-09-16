@@ -67,7 +67,7 @@
 								<li class="dropdown">
 									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
 									<ul class="dropdown-menu">
-											<li><a href="MerjentApp.html">MerjentApp</a></li>
+											<li><a href="tutorial-Merjent_App_Tutorial.html">Merjent_App_Tutorial</a></li>
 											<li><a href="tutorial-Utils.html">Utils</a></li>
 									</ul>
 								</li>
@@ -103,13 +103,44 @@
 		<section class="tutorial-section">
 			<article><h1>Utils</h1>
 <p>The code block below is the Helpers class as a stand alone utility that can be used in any java script environment, including fulcrum calculate fields, google apps scripts etc.</p>
-<pre><code>    var e=new class{constructor(){}isInstance(e,t){return e instanceof t}padZero(e,t){return e.toString().padStart(t,&quot;0&quot;)}arrSort(e=[],t=!0){return e.sort((e,r)=&gt;this.isNumber(e)&amp;&amp;this.isNumber(r)?t?Number(e)-Number(r):Number(r)-Number(e):this.isDate(e)&amp;&amp;this.isDate(r)?t?new Date(e)-new Date(r):new Date(r)-new Date(e):e&lt;r?t?-1:1:e&gt;r?t?1:-1:0)}arrReverse(e=[]){return this.arrSort(e,!1)}arr2Sorted(e=[],t=!0){var r=e.slice();return this.arrSort(r,t)}arr2Reversed(e=[]){var t=e.slice();return this.arrSort(t,!1)}rows2Sorted(e,t=null,r=!0,n=&quot;string&quot;){return e.slice().sort((e,s)=&gt;{let a,i;if(null===t&amp;&amp;1===Object.keys(e).length&amp;&amp;1===Object.keys(s).length?(a=Object.values(e)[0],i=Object.values(s)[0]):(a=e[t],i=s[t]),&quot;number&quot;===n||&quot;number&quot;==typeof a&amp;&amp;&quot;number&quot;==typeof i||!isNaN(Number(a))&amp;&amp;!isNaN(Number(i))&amp;&amp;&quot;&quot;!==a&amp;&amp;&quot;&quot;!==i)return a=Number(a),i=Number(i),r?a-i:i-a;const o=!isNaN(Date.parse(a)),u=!isNaN(Date.parse(i));return&quot;date&quot;===n||o&amp;&amp;u?(a=new Date(a),i=new Date(i),r?a-i:i-a):a&lt;i?r?-1:1:a&gt;i?r?1:-1:0})}arrRem(e,t){function r(t){e.splice(e.indexOf(t),1)}return Array.isArray(t)?t.forEach(e=&gt;r(e)):r(t)}arrSplice(e,t,r){e.splice(r=r||e.length,0,t)}dtAddDays(e,t){const r=new Date(e);return r.setDate(r.getDate()+t),r}dtMonthBounds(e){const t=new Date(e);return{first:new Date(t.getFullYear(),t.getMonth(),1),last:new Date(t.getFullYear(),t.getMonth()+1,0)}}dtDaysDiff(e=new Date,t=new Date){return Math.round((t.getTime()-e.getTime())/864e5)}iso2dt(e=&quot;&quot;){return new Date(this.dtStrip(e))}dtStrip(e=&quot;&quot;){return e.split(&quot;T&quot;)[0]}dt2iso(e=new Date){return e.toISOString().split(&quot;T&quot;)[0]}arrAnyInArr(e,t){return e.some(e=&gt;t.includes(e))}arrCountItems(e=[]){const t=e.reduce((e,t)=&gt;(e[t]=(e[t]||0)+1,e),{}),r=Object.entries(t).map(([e,t])=&gt;({item:e,count:t}));return this.rows2Sorted(r,&quot;count&quot;,!1,&quot;number&quot;)}arrListDups(e=[]){if(!Array.isArray(e)||0===e.length)return[];const t=e.reduce((e,t)=&gt;(e[t]=(e[t]||0)+1,e),{});return Object.keys(t).filter(e=&gt;t[e]&gt;1)}arrUnique(e){return e.filter((t,r)=&gt;e.indexOf(t)===r)}strAfter(e=&quot;&quot;,t=&quot;_&quot;){const r=e.indexOf(t);return e.slice(r+t.length)}strSuff(e=&quot;&quot;,t=&quot;_&quot;){const r=e.lastIndexOf(t);return e.slice(r+t.length)}strBefore(e=&quot;&quot;,t=&quot;_&quot;){const r=e.indexOf(t);return e.slice(0,r)}isNumber(e){return&quot;number&quot;==typeof e&amp;&amp;!isNaN(e)}isDate(e){if(e instanceof Date)return!isNaN(e.getTime());if(&quot;string&quot;==typeof e){const t=new Date(e);return!isNaN(t.getTime())}return!1}isBlank(e){return null==e||&quot;number&quot;!=typeof e&amp;&amp;&quot;boolean&quot;!=typeof e&amp;&amp;(&quot;string&quot;==typeof e?&quot;&quot;===e.trim():Array.isArray(e)?0===e.length:&quot;object&quot;==typeof e&amp;&amp;e.constructor===Object&amp;&amp;0===Object.keys(e).length)}isISOdt(e=&quot;&quot;){if(!new RegExp(/([+-]\d{2}|Z):?(\d{2})?\s*$/).test(e))return!1;const t=new Date(e);return t instanceof Date&amp;&amp;!isNaN(t.getTime())&amp;&amp;t.toISOString()===e}formatVal(e,t=null){if(t=t||&quot;---&quot;,this.isBlank(e))return t;if(&quot;object&quot;==typeof e){if(e instanceof Date)return this.dt2iso(e);if(&quot;thoroughfare&quot;in e)return this.formatAddress(e);if(&quot;choice_values&quot;in e){let t=e.choice_values.join(&quot;, &quot;);return e.other_values&amp;&amp;e.other_values.length&gt;0?t+&quot;, &quot;+e.other_values:t}}return Array.isArray(e)?e.join(&quot;, &quot;):&quot;string&quot;==typeof e&amp;&amp;this.isISOdt(e)?this.dtStrip(e):&quot;number&quot;==typeof e||&quot;boolean&quot;==typeof e?e.toString():e}formatAddress(e={}){return e?`${e.sub_thoroughfare||&quot;&quot;} ${e.thoroughfare||&quot;&quot;} ${e.suite||&quot;&quot;} ${e.locality?e.locality+&quot;, &quot;:&quot;&quot;} ${e.sub_admin_area?e.sub_admin_area+&quot;, &quot;:&quot;&quot;} ${e.admin_area||&quot;&quot;} ${e.postal_code||&quot;&quot;}`:&quot;&quot;}flipKVpair(e){return Object.fromEntries(Object.entries(e).map([k,v][(v,k)]))}html(e,...t){return e.reduce((e,r,n)=&gt;e+(t[n-1]||&quot;&quot;)+r).replace(/[\r\n]+/gm,&quot;&quot;).trim()}strProper(e){return e.charAt(0).toUpperCase()+e.slice(1).toLowerCase()}dn2Title(e){return e.replace(/_/g,&quot; &quot;).replace(/\w\S*/g,this.strProper)}rowsFind(e,t,r){const n=[];for(const s of e)s[t]===r&amp;&amp;n.push(s);return n.length&gt;0?n:null}};exports.U=e;           
+<pre><code>    class Helpers{constructor(){}isInstance(e,t){return e instanceof t}padZero(e,t){return e.toString().padStart(t,&quot;0&quot;)}arrSort(e=[],t=!0){return e.sort((e,r)=&gt;this.isNumber(e)&amp;&amp;this.isNumber(r)?t?Number(e)-Number(r):Number(r)-Number(e):this.isDate(e)&amp;&amp;this.isDate(r)?t?new Date(e)-new Date(r):new Date(r)-new Date(e):e&lt;r?t?-1:1:e&gt;r?t?1:-1:0)}arrReverse(e=[]){return this.arrSort(e,!1)}arr2Sorted(e=[],t=!0){var r=e.slice();return this.arrSort(r,t)}arr2Reversed(e=[]){var t=e.slice();return this.arrSort(t,!1)}rows2Sorted(e,t=null,r=!0,n=&quot;string&quot;){return e.slice().sort((e,s)=&gt;{let a,i;if(null===t&amp;&amp;1===Object.keys(e).length&amp;&amp;1===Object.keys(s).length?(a=Object.values(e)[0],i=Object.values(s)[0]):(a=e[t],i=s[t]),&quot;number&quot;===n||&quot;number&quot;==typeof a&amp;&amp;&quot;number&quot;==typeof i||!isNaN(Number(a))&amp;&amp;!isNaN(Number(i))&amp;&amp;&quot;&quot;!==a&amp;&amp;&quot;&quot;!==i)return a=Number(a),i=Number(i),r?a-i:i-a;const o=!isNaN(Date.parse(a)),u=!isNaN(Date.parse(i));return&quot;date&quot;===n||o&amp;&amp;u?(a=new Date(a),i=new Date(i),r?a-i:i-a):a&lt;i?r?-1:1:a&gt;i?r?1:-1:0})}arrRem(e,t){function r(t){e.splice(e.indexOf(t),1)}return Array.isArray(t)?t.forEach(e=&gt;r(e)):r(t)}arrSplice(e,t,r){e.splice(r=r||e.length,0,t)}dtAddDays(e,t){const r=new Date(e);return r.setDate(r.getDate()+t),r}dtMonthBounds(e){const t=new Date(e);return{first:new Date(t.getFullYear(),t.getMonth(),1),last:new Date(t.getFullYear(),t.getMonth()+1,0)}}dtDaysDiff(e=new Date,t=new Date){return Math.round((t.getTime()-e.getTime())/864e5)}iso2dt(e=&quot;&quot;){return new Date(this.dtStrip(e))}dtStrip(e=&quot;&quot;){return e.split(&quot;T&quot;)[0]}dt2iso(e=new Date){return e.toISOString().split(&quot;T&quot;)[0]}arrAnyInArr(e,t){return e.some(e=&gt;t.includes(e))}arrCountItems(e=[]){const t=e.reduce((e,t)=&gt;(e[t]=(e[t]||0)+1,e),{}),r=Object.entries(t).map(([e,t])=&gt;({item:e,count:t}));return this.rows2Sorted(r,&quot;count&quot;,!1,&quot;number&quot;)}arrListDups(e=[]){if(!Array.isArray(e)||0===e.length)return[];const t=e.reduce((e,t)=&gt;(e[t]=(e[t]||0)+1,e),{});return Object.keys(t).filter(e=&gt;t[e]&gt;1)}arrUnique(e){return e.filter((t,r)=&gt;e.indexOf(t)===r)}strAfter(e=&quot;&quot;,t=&quot;_&quot;){const r=e.indexOf(t);return e.slice(r+t.length)}strSuff(e=&quot;&quot;,t=&quot;_&quot;){const r=e.lastIndexOf(t);return e.slice(r+t.length)}strBefore(e=&quot;&quot;,t=&quot;_&quot;){const r=e.indexOf(t);return e.slice(0,r)}isNumber(e){return&quot;number&quot;==typeof e&amp;&amp;!isNaN(e)}isDate(e){if(e instanceof Date)return!isNaN(e.getTime());if(&quot;string&quot;==typeof e){const t=new Date(e);return!isNaN(t.getTime())}return!1}isBlank(e){return null==e||&quot;number&quot;!=typeof e&amp;&amp;&quot;boolean&quot;!=typeof e&amp;&amp;(&quot;string&quot;==typeof e?&quot;&quot;===e.trim():Array.isArray(e)?0===e.length:&quot;object&quot;==typeof e&amp;&amp;e.constructor===Object&amp;&amp;0===Object.keys(e).length)}isISOdt(e=&quot;&quot;){if(!new RegExp(/([+-]\d{2}|Z):?(\d{2})?\s*$/).test(e))return!1;const t=new Date(e);return t instanceof Date&amp;&amp;!isNaN(t.getTime())&amp;&amp;t.toISOString()===e}formatVal(e,t=null){if(t=t||&quot;---&quot;,this.isBlank(e))return t;if(&quot;object&quot;==typeof e){if(e instanceof Date)return this.dt2iso(e);if(&quot;thoroughfare&quot;in e)return this.formatAddress(e);if(&quot;choice_values&quot;in e){let t=e.choice_values.join(&quot;, &quot;);return e.other_values&amp;&amp;e.other_values.length&gt;0?t+&quot;, &quot;+e.other_values:t}}return Array.isArray(e)?e.join(&quot;, &quot;):&quot;string&quot;==typeof e&amp;&amp;this.isISOdt(e)?this.dtStrip(e):&quot;number&quot;==typeof e||&quot;boolean&quot;==typeof e?e.toString():e}formatAddress(e={}){return e?`${e.sub_thoroughfare||&quot;&quot;} ${e.thoroughfare||&quot;&quot;} ${e.suite||&quot;&quot;} ${e.locality?e.locality+&quot;, &quot;:&quot;&quot;} ${e.sub_admin_area?e.sub_admin_area+&quot;, &quot;:&quot;&quot;} ${e.admin_area||&quot;&quot;} ${e.postal_code||&quot;&quot;}`:&quot;&quot;}flipKVpair(e){return Object.fromEntries(Object.entries(e).map([k,v][(v,k)]))}html(e,...t){return e.reduce((e,r,n)=&gt;e+(t[n-1]||&quot;&quot;)+r).replace(/[\r\n]+/gm,&quot;&quot;).trim()}strProper(e){return e.charAt(0).toUpperCase()+e.slice(1).toLowerCase()}dn2Title(e){return e.replace(/_/g,&quot; &quot;).replace(/\w\S*/g,this.strProper)}rowsFind(e,t,r){const n=[];for(const s of e)s[t]===r&amp;&amp;n.push(s);return n.length&gt;0?n:null}};var U=new Helpers;
 </code></pre>
 <h2>Utils js.node</h2>
 <p>To install the class above in a node environment (ie. fulcrum data events) change the &quot;var U = new Helpers;&quot; to:</p>
 <pre><code>    module.exports.U = new Helpers;
 </code></pre>
-<p>To use the utility in a fulcrum calculation expression leave it as is.</p></article>
+<p>To use the utility in a fulcrum calculation expression leave it as is.</p>
+<script>
+
+// This script would run after the Markdown has been rendered to HTML
+
+document.addEventListener('DOMContentLoaded', () => {
+    const codeBlocks = document.querySelectorAll('pre code');
+
+    codeBlocks.forEach(codeBlock => {
+        const copyButton = document.createElement('button');
+        copyButton.textContent = 'Copy';
+        copyButton.className = 'copy-code-button'; // Add a class for styling
+
+        copyButton.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(codeBlock.textContent);
+                copyButton.textContent = 'Copied!';
+                setTimeout(() => {
+                    copyButton.textContent = 'Copy';
+                }, 1500); // Reset button text after a delay
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+                // Fallback for older browsers if needed
+            }
+        });
+
+        // Append the button (adjust placement as needed)
+        codeBlock.parentNode.appendChild(copyButton); 
+    });
+});
+
+</script></article>
 		</section>
 			</div>
 				<div class="col-md-3 side-content">
@@ -119,7 +150,7 @@
 	</div>
 	<footer>
 				<div class="copyright"> </div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on 15th Sep 2025 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on 16th Sep 2025 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

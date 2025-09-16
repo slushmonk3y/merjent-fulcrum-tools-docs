@@ -1,10 +1,10 @@
-<!-- start:source.tmpl.hbs -->
+<!-- start:readme.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>mApp/AppTemplates.js</title>
+		<title>Merjent_App_Tutorial</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -14,7 +14,7 @@
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"Merjent Fulcrum Tools","systemSummary":"Modules for modifying Fulcrum apps","systemLogo":"","systemColor":"","navMembers":[{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":" ","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
-			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_TOC_ENABLED = true;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -88,70 +88,25 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">source</span>
-				<h1><span class="name">mApp/AppTemplates.js</span></h1>
+				<span class="kind">tutorial</span>
+				<h1><span class="title">Merjent_App_Tutorial</span></h1>
 			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-12 main-content">
-		<section class="source-section">
-			<article></article>
-			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { DefaultMethods } from "./DefaultMethods";
-/**
- * Type of object containing app templates
- * @typedef {Object} AppTemplates
- * @property {Function} template_default - The default starting template. All methods come from this.DefaultMethods.
- * @ignore
- */
-
-/** @namespace MerjentApp.AppTemplates */
-
-/** 
- * @memberof MerjentApp.AppTemplates
- * @returns {AppTemplates}
- * @param {MerjentApp} appSettings
- */
-function AppTemplates(appSettings){
-    var methods = DefaultMethods(appSettings)
-    return {
-        /**
-         * @description Default app template. Binds default functions to MerjentApp.
-         * 
-         * @memberof MerjentApp.AppTemplates#
-         * @method
-         * @param {*} event
-         * @returns {void}
-         */
-        template_default(){
-            appSettings.getPermissions=methods.getPermissions.bind(appSettings);
-            appSettings.getStatus=methods.getStatus.bind(appSettings);
-            appSettings.getCompleteLockStatus=methods.getCompleteLockStatus.bind(appSettings);
-            appSettings.baseUpdatePermission=methods.baseUpdatePermission.bind(appSettings);
-            appSettings.addUpdatePermission=methods.addUpdatePermission.bind(appSettings);
-            appSettings.updatePermission=methods.updatePermission.bind(appSettings);
-            appSettings.updateStatus=methods.updateStatus.bind(appSettings);
-            appSettings.getLockStatus=methods.getLockStatus.bind(appSettings);
-            appSettings.updateLock=methods.updateLock.bind(appSettings);
-            appSettings.baseLockEditing = methods.baseLockEditing.bind(appSettings)
-            appSettings.addLockEditing = methods.addLockEditing.bind(appSettings)
-            appSettings.lockEditing=methods.lockEditing.bind(appSettings);
-            appSettings.validatePhoto=methods.validatePhoto.bind(appSettings);
-            appSettings.start=methods.start.bind(appSettings);
-            appSettings.reportIDprefix=methods.reportIDprefix.bind(appSettings)
-            appSettings.enterReportID=methods.enterReportID.bind(appSettings);
-            appSettings.addCoordinatorInitials = methods.addCoordinatorInitials.bind(appSettings)
-            appSettings.limitCaption = methods.limitCaption.bind(appSettings)
-            appSettings.validateAllPhotos = methods.validateAllPhotos.bind(appSettings)
-            appSettings.disableNewRecordCreation = methods.disableNewRecordCreation.bind(appSettings)
-        }
-    }
-
-}
-
-export { AppTemplates }</code></pre>
+			<div class="col-md-9 main-content">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="list_tutorial.html">Tutorials</a></li>
+							<li class="active">Merjent_App_Tutorial</li>
+						</ol>
+		<section class="tutorial-section">
+			<article><p>...Placeholder...</p></article>
 		</section>
 			</div>
+				<div class="col-md-3 side-content">
+					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
+				</div>
 		</div>
 	</div>
 	<footer>
@@ -183,4 +138,4 @@ export { AppTemplates }</code></pre>
 	
 </body>
 </html>
-<!-- end:source.tmpl.hbs -->
+<!-- end:readme.hbs -->

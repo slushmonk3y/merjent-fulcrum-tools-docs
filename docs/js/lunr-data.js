@@ -53,28 +53,6 @@ window.lunrData = {
           "document",
           "global"
         ],
-        "MerjentApp.html": [
-          "app",
-          "class",
-          "common",
-          "completelock",
-          "data",
-          "event",
-          "fieldlock",
-          "fulcrum",
-          "handl",
-          "mapp",
-          "mapp.completelockcondit",
-          "mapp.dnsubmit",
-          "mapp.fieldlockcondit",
-          "mejent",
-          "merjentapp",
-          "method",
-          "null",
-          "set",
-          "turn",
-          "updatestatu"
-        ],
         "undefined": [
           "tutori",
           "util"
@@ -1271,6 +1249,28 @@ window.lunrData = {
           "string",
           "strsuff",
           "val"
+        ],
+        "MerjentApp.html": [
+          "app",
+          "class",
+          "common",
+          "completelock",
+          "data",
+          "event",
+          "fieldlock",
+          "fulcrum",
+          "handl",
+          "mapp",
+          "mapp.completelockcondit",
+          "mapp.dnsubmit",
+          "mapp.fieldlockcondit",
+          "mejent",
+          "merjentapp",
+          "method",
+          "null",
+          "set",
+          "turn",
+          "updatestatu"
         ],
         "MerjentApp.html#.appTemplates": [
           "apptempl",
@@ -8353,6 +8353,43 @@ window.lunrData = {
                           "tf": 4.545454545454546
                         }
                       },
+                      "_": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "p": {
+                            "docs": {},
+                            "p": {
+                              "docs": {},
+                              "_": {
+                                "docs": {},
+                                "t": {
+                                  "docs": {},
+                                  "u": {
+                                    "docs": {},
+                                    "t": {
+                                      "docs": {},
+                                      "o": {
+                                        "docs": {},
+                                        "r": {
+                                          "docs": {},
+                                          "i": {
+                                            "docs": {
+                                              "undefined": {
+                                                "tf": 1900
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
                       "a": {
                         "docs": {},
                         "p": {
@@ -14824,10 +14861,6 @@ window.lunrData = {
                   "docs": {},
                   "i": {
                     "docs": {
-                      "MerjentApp.html": {
-                        "ref": "MerjentApp.html",
-                        "tf": 110
-                      },
                       "undefined": {
                         "tf": 110
                       },
@@ -30468,6 +30501,7 @@ window.lunrData = {
       "mejent",
       "member",
       "merjent",
+      "merjent_app_tutori",
       "merjentapp",
       "merjentapp#addcoordinatoriniti",
       "merjentapp#addlockedit",
@@ -30912,17 +30946,6 @@ window.lunrData = {
       "tags": "global",
       "summary": "All documented globals.",
       "description": "",
-      "body": ""
-    },
-    "MerjentApp.html": {
-      "id": "MerjentApp.html",
-      "kind": "class",
-      "title": "MerjentApp",
-      "longname": "MerjentApp",
-      "name": "MerjentApp",
-      "tags": "MerjentApp",
-      "summary": "",
-      "description": "This class handles common data events in Mejent fulcrum Apps. To turn off fieldLock and completeLock set mApp. mApp.completeLockCondition = [] or mApp.fieldLockCondition = []. To turn off the updateStatus method set mApp.dnSubmit = null",
       "body": ""
     },
     "undefined": {
@@ -31802,6 +31825,17 @@ window.lunrData = {
       "tags": "Helpers#strSuff strSuff",
       "summary": "",
       "description": "Return slice of string AFTER LAST occurence of search string."
+    },
+    "MerjentApp.html": {
+      "id": "MerjentApp.html",
+      "kind": "class",
+      "title": "MerjentApp",
+      "longname": "MerjentApp",
+      "name": "MerjentApp",
+      "tags": "MerjentApp",
+      "summary": "",
+      "description": "This class handles common data events in Mejent fulcrum Apps. To turn off fieldLock and completeLock set mApp. mApp.completeLockCondition = [] or mApp.fieldLockCondition = []. To turn off the updateStatus method set mApp.dnSubmit = null",
+      "body": ""
     },
     "MerjentApp.html#.appTemplates": {
       "id": "MerjentApp.html#.appTemplates",
