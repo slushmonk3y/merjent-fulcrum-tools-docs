@@ -110,37 +110,7 @@
 <pre><code>    module.exports.U = new Helpers;
 </code></pre>
 <p>To use the utility in a fulcrum calculation expression leave it as is.</p>
-<script>
-
-// This script would run after the Markdown has been rendered to HTML
-
-document.addEventListener('DOMContentLoaded', () => {
-    const codeBlocks = document.querySelectorAll('pre code');
-
-    codeBlocks.forEach(codeBlock => {
-        const copyButton = document.createElement('button');
-        copyButton.textContent = 'Copy';
-        copyButton.className = 'copy-code-button'; // Add a class for styling
-
-        copyButton.addEventListener('click', async () => {
-            try {
-                await navigator.clipboard.writeText(codeBlock.textContent);
-                copyButton.textContent = 'Copied!';
-                setTimeout(() => {
-                    copyButton.textContent = 'Copy';
-                }, 1500); // Reset button text after a delay
-            } catch (err) {
-                console.error('Failed to copy text: ', err);
-                // Fallback for older browsers if needed
-            }
-        });
-
-        // Append the button (adjust placement as needed)
-        codeBlock.parentNode.appendChild(copyButton); 
-    });
-});
-
-</script></article>
+</article>
 		</section>
 			</div>
 				<div class="col-md-3 side-content">
@@ -177,4 +147,35 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 </body>
 </html>
+<script>
+
+// This script would run after the Markdown has been rendered to HTML
+
+document.addEventListener('DOMContentLoaded', () => {
+    const codeBlocks = document.querySelectorAll('pre code');
+
+    codeBlocks.forEach(codeBlock => {
+        const copyButton = document.createElement('button');
+        copyButton.textContent = 'Copy';
+        copyButton.className = 'copy-code-button'; // Add a class for styling
+
+        copyButton.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(codeBlock.textContent);
+                copyButton.textContent = 'Copied!';
+                setTimeout(() => {
+                    copyButton.textContent = 'Copy';
+                }, 1500); // Reset button text after a delay
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+                // Fallback for older browsers if needed
+            }
+        });
+
+        // Append the button (adjust placement as needed)
+        codeBlock.parentNode.appendChild(copyButton); 
+    });
+});
+
+</script>
 <!-- end:readme.hbs -->
