@@ -1,0 +1,2414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>MerjentApp</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"Merjent Fulcrum Tools","systemSummary":"Modules for common tasks in Merjent Fulcrum apps","systemLogo":"","systemColor":"","navMembers":[{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":" ","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":false,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					Merjent Fulcrum Tools
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="DataEventHelpers.html">DataEventHelpers</a></li>
+											<li><a href="FieldHelpers.html">FieldHelpers</a></li>
+											<li><a href="FulcrumHelpers.html">FulcrumHelpers</a></li>
+											<li><a href="Helpers.html">Helpers</a></li>
+											<li><a href="MerjentApp.html">MerjentApp</a></li>
+											<li><a href="MLoadRecs.html">MLoadRecs</a></li>
+											<li><a href="ReportHelpers.html">ReportHelpers</a></li>
+											<li><a href="RequestHelpers.html">RequestHelpers</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_module.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="module-dataEventMtools.html">dataEventMtools</a></li>
+											<li><a href="module-merjentAppModule.html">merjentAppModule</a></li>
+											<li><a href="module-reportMtools.html">reportMtools</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="MerjentApp.AppTemplates.html">MerjentApp.AppTemplates</a></li>
+											<li><a href="MerjentApp.DefaultMethods.html">MerjentApp.DefaultMethods</a></li>
+											<li><a href="MerjentApp.PermissionMethods.html">MerjentApp.PermissionMethods</a></li>
+											<li><a href="MerjentApp.StatusMethods.html">MerjentApp.StatusMethods</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-Merjent_App_Tutorial.html">Merjent_App_Tutorial</a></li>
+											<li><a href="tutorial-Utils.html">Utils</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">class</span>
+				<h1><span class="name">MerjentApp</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="list_class.html">Classes</a></li>
+							<li class="active">MerjentApp</li>
+						</ol>
+					<section>
+							<dl class="symbol primary">
+								<dt class="symbol-title class collapsible-symbol expanded">
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">MerjentApp</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
+</dt>
+<dd class="symbol-details class  collapsible-symbol expanded" style="max-height: 9999px;">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>This class handles common data events in Mejent fulcrum Apps.</p>
+			<p>To turn off fieldLock and completeLock set mApp. mApp.completeLockCondition = [] or mApp.fieldLockCondition = [].
+			To turn off the updateStatus method set mApp.dnSubmit = null</p></div>
+			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">mApp.dnSubmit &#x3D; nullmApp.completeLockCondition &#x3D; []mApp.fieldLockCondition &#x3D; []</code></pre>
+					</div>
+			</div>	</div>
+</dd>
+							</dl>
+							<article class="secondary">
+									<h3>Namespaces</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title namespace public">
+			<h4 id="AppTemplates" class="namespace public"><a href="MerjentApp.AppTemplates.html"><span class="name">AppTemplates</span></a></h4>
+		</dt>
+<dd class="symbol-details namespace public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title namespace public">
+			<h4 id="DefaultMethods" class="namespace public"><a href="MerjentApp.DefaultMethods.html"><span class="name">DefaultMethods</span></a></h4>
+		</dt>
+<dd class="symbol-details namespace public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title namespace public">
+			<h4 id="PermissionMethods" class="namespace public"><a href="MerjentApp.PermissionMethods.html"><span class="name">PermissionMethods</span></a></h4>
+		</dt>
+<dd class="symbol-details namespace public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title namespace public">
+			<h4 id="StatusMethods" class="namespace public"><a href="MerjentApp.StatusMethods.html"><span class="name">StatusMethods</span></a></h4>
+		</dt>
+<dd class="symbol-details namespace public">
+	<div class="symbol-details-inner">
+	</div>
+</dd>
+									</dl>
+									<h3>Members</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id=".appTemplates" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">appTemplates</span><span class="signature-type"> :AppTemplates</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-info">
+				<h5>Properties</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>template_default</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>The default starting template. All methods come from this.DefaultMethods.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id=".defaultMethods" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">defaultMethods</span><span class="signature-type"> :DefaultMethods</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-info">
+				<h5>Properties</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>start</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Runs: updatePermission &gt; updateStatus &gt; if lockOnLoad == true then updateLock* 123</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>enterReportID</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Set report id to: <code>{report year}{report month}{report day} T {current hours}{current minutes} _ {user initials}</code></p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>getPermissions</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>{string} Gets the permission level of the USER: Admin | Editor | User | Viewer</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>getCompleteLockStatus</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>{boolean} Is the status condition for this.completeLock true</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>baseUpdatePermission</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Base update permission restrictions for setting fields readonly</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>addUpdatePermission</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Addon update permission restrictions for setting fields readonly</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>updatePermission</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>baseUpdatePermission() &amp; addUpdatePermission combined</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>getStatus</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>{string} Function for checking conditions for status</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>updateStatus</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Update stats</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>getLockStatus</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>{boolean} Is the status condition for this.fieldLock true</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>updateLock</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Turns the field lock on/off depending on value of getLockStatus(). Defaults to all fields except this.dnSubmit</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>baseLockEditing</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Checks for field lock conditions and calls updateLock(). Default condition is if this.dnSubmit == 'yes'</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>addLockEditing</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Addon conditions for field lock</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>lockEditing</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>baseLockEditing() and  addLockEditing() combined</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>validatePhoto</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Calls photo validation methods if this.requireLandscape = true or this.setLocoff1photo = true;</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>addCoordinatorInitials</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Adds coordinators intials when this.dnReviewed is checked 'yes'</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>limitCaption</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Alert for text in photo caption exceeding this.photoCapMax length. Default is 1258.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>validateAllPhotos</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Alert for record submitted without photo captions</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id=".permissionMethods" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">permissionMethods</span><span class="signature-type"> :PermissionMethods</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-info">
+				<h5>Properties</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>hideCoordInit</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>Addon for update permissions that shows/hides this.dnReviewed and this.dnCoordinatorInitials depending on user permission levels.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id=".statusMethods" class="member public"><span class="signature-attribs">&lt;static> </span><span class="name">statusMethods</span><span class="signature-type"> :StatusMethods</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>This is a list of template getStatus() methods. Each one is setup for a set of status values.
+			Most of the changes in status are triggerd by changes in the value of the this.dnSubmit and this.dnReviewed fields.</p>
+			<p>Most methods assume that fields are Y/N fields and a value of 'yes' triggers the change in status. Exceptions are noted.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Properties</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>active_resolved</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>[Active, Resolved]</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>draft_complete</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>[Draft, Complete]</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>p_s_complete</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>[Pending, Submitted, Complete]</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>p_s_c_f_resolved</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>[Pending, Submitted, Complete, Follow-up, Resolved]</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>p_s_c_f_resolved_date</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>[Pending, Submitted, Complete, Follow-up, Resolved]</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="adminNames" class="member public"><span class="name">adminNames</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Array of user names to have &quot;Admin&quot; privleges in this app.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- [&#x27;Jason Hendricks&#x27;, &#x27;Amanda Johnson&#x27;, &#x27;Mikel Paiva&#x27;]</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="adminRoles" class="member public"><span class="name">adminRoles</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Array of Fulcrum user roles to have &quot;Admin&quot; privleges in this app.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- []</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="allPhotos" class="member public"><span class="name">allPhotos</span><span class="signature-type"> :Array</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Array of photo names to check for missing captions and exceeding max character limit.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- &#x27;site_photos&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="completeLockCondition" class="member public"><span class="name">completeLockCondition</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Array of status values to match for turning on complete record lock.</p>
+			<p>To turn off complete lock use empty array [].</p></div>
+			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">mApp.completeLockCondition &#x3D; []</code></pre>
+					</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- [&#x27;Complete&#x27;, &#x27;Resolved&#x27;]</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="completeLockExclude" class="member public"><span class="name">completeLockExclude</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Array of data names to exclude from read-only status when complete lock is on.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- [this.dnSubmit,this.dnReviewed]</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="defaultPermissionLevel" class="member public"><span class="name">defaultPermissionLevel</span><span class="signature-type"> :string</span></h4>
+				<div class="summary"><ul>
+		<li>The default permission level for users that are not specified as being under a specific permission level.</li>
+		</ul></div></dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Possible values are 'Admin', 'Editor', 'User', 'Viewer'.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- &#x27;User&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="disableLocationEdit" class="member public"><span class="name">disableLocationEdit</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Disable location editing for User and Editor. Checked in default updatePermission method. Calls M.disableLocationEdit()</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- false</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="dnCoordinatorInitials" class="member public"><span class="name">dnCoordinatorInitials</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Data name of the 'dnCoordinatorInitials' field. Signed with coordinator initials when mApp.dnReviewed gets checked 'yes'</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- &#x27;coordinator_reviewed&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="dnDt" class="member public"><span class="name">dnDt</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Data name of the primary report date field.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- &#x27;date&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="dnFollowUp" class="member public"><span class="name">dnFollowUp</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Data name of the follow=up required y/n field.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- &#x27;report_id&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="dnFollowUpRepeatable" class="member public"><span class="name">dnFollowUpRepeatable</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Data name of the follow-up repeatable field.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- &#x27;follow_up_report&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="dnPhotoLoc" class="member public"><span class="name">dnPhotoLoc</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Data name of the photo field to use for setting record location and also landscape validation.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- &#x27;site_photos&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="dnReportID" class="member public"><span class="name">dnReportID</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Data name of the report id field.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- &#x27;report_id&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="dnResolved" class="member public"><span class="name">dnResolved</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Data name of the follow-up resolved field. Could be a y/n field or a date field.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- &#x27;resolved_date&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="dnReviewed" class="member public"><span class="name">dnReviewed</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Data name of the 'coordinator_reviewed' field. Default status functions are checking for value of 'yes'. Turns on complete lock.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- &#x27;coordinator_reviewed&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="dnSubmit" class="member public"><span class="name">dnSubmit</span><span class="signature-type"> :string</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Data name of the 'submit_report' field. Default status functions are checking for value of 'yes'. Turns on field lock.
+			If you are not using the updateStatus data event set this to null.</li>
+			</ul></div>
+			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">mApp.dnSubmit &#x3D; null //Turns off updatStatus Method.</code></pre>
+					</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">string</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- &#x27;submit_report&#x27;</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="editorNames" class="member public"><span class="name">editorNames</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Array of user names to have &quot;Editor&quot; privleges in this app.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- []</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="editorRoles" class="member public"><span class="name">editorRoles</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Array of Fulcrum user roles to have &quot;Editor&quot; privleges in this app.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- []</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="fieldLockCondition" class="member public"><span class="name">fieldLockCondition</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Array of status values to match for turning on field lock.</p>
+			<p>To turn off field lock use empty array [].</p></div>
+			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">mApp.fieldLockCondition &#x3D; []</code></pre>
+					</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- [&#x27;Submitted&#x27;]</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="fieldLockExclude" class="member public"><span class="name">fieldLockExclude</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Array of data names to exclude from read-only status when field lock is on.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- [this.dnSubmit]</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="install_template" class="member public"><span class="name">install_template</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Installs app template settings from template located in mApp.appTemplates</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>newTemplate</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">function</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><ul>
+			<li>The app template function that binds its methods to this instance of Merjent App</li>
+			</ul></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- null (This is the default template)</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="lockOnLoad" class="member public"><span class="name">lockOnLoad</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Option to check for fieldLock on load.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- true</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="photoCapMax" class="member public"><span class="name">photoCapMax</span><span class="signature-type"> :number</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Max characters allowed in a photo caption</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">number</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- 1258</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="requireLandscape" class="member public"><span class="name">requireLandscape</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Option to force landscape format for the photo field with data name mApp.dnPhotoLoc</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- false</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="setLocoff1photo" class="member public"><span class="name">setLocoff1photo</span><span class="signature-type"> :boolean</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Option to set the record location to the location of the first photo taken from photo field with data name mApp.dnPhotoLoc</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">boolean</span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- false</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="userNames" class="member public"><span class="name">userNames</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Array of user names to have &quot;User&quot; privleges in this app.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- []</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="userRoles" class="member public"><span class="name">userRoles</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Array of Fulcrum user roles to have &quot;User&quot; privleges in this app.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- []</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="viewerNames" class="member public"><span class="name">viewerNames</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Array of user names to have &quot;Viewer&quot; privleges in this app.</li>
+			</ul>
+			<p>The default getPermissions() method places all users not listed in another permission level in this category.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- [&#x27;Field User 1&#x27;, &#x27;Field User 2&#x27;]</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="viewerRoles" class="member public"><span class="name">viewerRoles</span><span class="signature-type"> :Array.&lt;string></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><ul>
+			<li>Array of Fulcrum user roles to have &quot;Viewer&quot; privleges in this app.</li>
+			</ul></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;string></span></div>
+								</div>
+							</div>
+			
+							<!-- defaultvalue -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Default Value</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">- []</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
+									<h3>Methods</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="addCoordinatorInitials" class="function public"><span class="name">addCoordinatorInitials</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="addLockEditing" class="function public"><span class="name">addLockEditing</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="addUpdatePermission" class="function public"><span class="name">addUpdatePermission</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="baseLockEditing" class="function public"><span class="name">baseLockEditing</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="baseUpdatePermission" class="function public"><span class="name">baseUpdatePermission</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="disableNewRecordCreation" class="function public"><span class="name">disableNewRecordCreation</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="enterReportID" class="function public"><span class="name">enterReportID</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="getCompleteLockStatus" class="function public"><span class="name">getCompleteLockStatus</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="getLockStatus" class="function public"><span class="name">getLockStatus</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{boolean}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">boolean</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="getPermissions" class="function public"><span class="name">getPermissions</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="getStatus" class="function public"><span class="name">getStatus</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="limitCaption" class="function public"><span class="name">limitCaption</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="lockEditing" class="function public"><span class="name">lockEditing</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="reportIDprefix" class="function public"><span class="name">reportIDprefix</span><span class="signature-params">()</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="start" class="function public"><span class="name">start</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="updateLock" class="function public"><span class="name">updateLock</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="updatePermission" class="function public"><span class="name">updatePermission</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="updateStatus" class="function public"><span class="name">updateStatus</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="validateAllPhotos" class="function public"><span class="name">validateAllPhotos</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="validatePhoto" class="function public"><span class="name">validatePhoto</span><span class="signature-params">( <span class="signature-param">event</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Description placeholder</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>event</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+									</dl>
+							</article>
+					</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+				<div class="copyright"> </div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on 20th Sep 2025 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>

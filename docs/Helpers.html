@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>Helpers</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"Merjent Fulcrum Tools","systemSummary":"Modules for common tasks in Merjent Fulcrum apps","systemLogo":"","systemColor":"","navMembers":[{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":" ","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":false,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"longname","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":false}};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					Merjent Fulcrum Tools
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="DataEventHelpers.html">DataEventHelpers</a></li>
+											<li><a href="FieldHelpers.html">FieldHelpers</a></li>
+											<li><a href="FulcrumHelpers.html">FulcrumHelpers</a></li>
+											<li><a href="Helpers.html">Helpers</a></li>
+											<li><a href="MerjentApp.html">MerjentApp</a></li>
+											<li><a href="MLoadRecs.html">MLoadRecs</a></li>
+											<li><a href="ReportHelpers.html">ReportHelpers</a></li>
+											<li><a href="RequestHelpers.html">RequestHelpers</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_module.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="module-dataEventMtools.html">dataEventMtools</a></li>
+											<li><a href="module-merjentAppModule.html">merjentAppModule</a></li>
+											<li><a href="module-reportMtools.html">reportMtools</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="MerjentApp.AppTemplates.html">MerjentApp.AppTemplates</a></li>
+											<li><a href="MerjentApp.DefaultMethods.html">MerjentApp.DefaultMethods</a></li>
+											<li><a href="MerjentApp.PermissionMethods.html">MerjentApp.PermissionMethods</a></li>
+											<li><a href="MerjentApp.StatusMethods.html">MerjentApp.StatusMethods</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="list_tutorial.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="tutorial-Merjent_App_Tutorial.html">Merjent_App_Tutorial</a></li>
+											<li><a href="tutorial-Utils.html">Utils</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">class</span>
+				<h1><span class="name">Helpers</span></h1>
+				<div class="summary"><p>Utility helper methods</p></div>			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="list_class.html">Classes</a></li>
+							<li class="active">Helpers</li>
+						</ol>
+					<section>
+							<dl class="symbol primary">
+								<dt class="symbol-title class collapsible-symbol expanded">
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">Helpers</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
+		<div class="summary"><p>Utility helper methods</p></div></dt>
+<dd class="symbol-details class  collapsible-symbol expanded" style="max-height: 9999px;">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><div>For use in any JavaScript project, including Google Apps scripts etc.</div>
+			<div>Method naming uses the following conventions:</div>
+			<div>arr = Array</div>
+			<div>dt = Date</div>
+			<div>iso = String of a date in javascript ISO 8601 format (YYYY-MM-DD or YYYY-MM-DD**T**hh:mm:ss**Z**)</div>
+			<div>str = String</div>
+			<div>rows = Array of Objects(or JSONs)</div>
+			<div>dn = String of a Fulcrum *data_name* of a table field</div></div>
+			</div>	</div>
+</dd>
+							</dl>
+							<article class="secondary">
+									<h3>Methods</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="arr2Reversed" class="function public"><span class="name">arr2Reversed</span><span class="signature-params">( <span class="signature-param">arr</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Array}</span></h4>
+				<div class="summary"><p>Sorts an array of strings, numbers, or dates.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Sorts an array of strings, numbers, or dates in descending order. Returns a new array.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>arr</code></td>
+							<td><span class="param-type">Array</span></td>
+							<td class="last">
+									<p>Array of strings, numbers, or date strings/objects.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Array</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><ul>
+			<li>Sorted array (new array, does not mutate original).</li>
+			</ul></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="arr2Sorted" class="function public"><span class="name">arr2Sorted</span><span class="signature-params">( <span class="signature-param">arr</span> [,&nbsp;<span class="signature-param">asc</span>&nbsp;]&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Array}</span></h4>
+				<div class="summary"><p>Sorts an array of strings, numbers, or dates.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Sorts an array of strings, numbers, or dates in ascending or descending order. Returns a new array.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Attributes</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>arr</code></td>
+							<td><span class="param-type">Array</span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+									<p>Array of strings, numbers, or date strings/objects.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>asc</code></td>
+							<td><span class="param-type">boolean</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>true</td>
+							<td class="last">
+									<p>Sort ascending (true) or descending (false).</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Array</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><ul>
+			<li>Sorted array (new array, does not mutate original).</li>
+			</ul></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="arrAnyInArr" class="function public"><span class="name">arrAnyInArr</span><span class="signature-params">( <span class="signature-param">arr1</span>, <span class="signature-param">arr2</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{boolean}</span></h4>
+				<div class="summary"><p>Check if any string in one array is in another array.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Returns true if any string in arr1 matches any string in arr2.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>arr1</code></td>
+							<td><span class="param-type">Array.&lt;string></span></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>arr2</code></td>
+							<td><span class="param-type">Array.&lt;string></span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">boolean</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="arrCountItems" class="function public"><span class="name">arrCountItems</span><span class="signature-params">( <span class="signature-param">arr</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Array.&lt;Object>}</span></h4>
+				<div class="summary"><p>Count occurrences of items in an array.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Counts the number of occurrences of each unique item in an array and returns an array of objects,
+			each with properties 'item' and 'count', sorted by count descending.
+			Example: ['a','b','a'] =&gt; [ { item: 'a', count: 2 }, { item: 'b', count: 1 } ]</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>arr</code></td>
+							<td><span class="param-type">Array</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Array.&lt;Object></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="arrListDups" class="function public"><span class="name">arrListDups</span><span class="signature-params">( <span class="signature-param">arr</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Array}</span></h4>
+				<div class="summary"><p>List duplicate values in an array.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Creates an array containing all values that are present in array more then once.
+			Also see arrUnique to filter an array down to only unique values.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>arr</code></td>
+							<td><span class="param-type">Array</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Array</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="arrRem" class="function public"><span class="name">arrRem</span><span class="signature-params">( <span class="signature-param">haystack</span>, <span class="signature-param">needle</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Array}</span></h4>
+				<div class="summary"><p>Remove element from array.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Remove element from array. Returns new array.
+			ie: Remove field name string from array of field names. Return new list of field names.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>haystack</code></td>
+							<td><span class="param-type">Array</span></td>
+							<td class="last">
+									<p>array to add element to</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>needle</code></td>
+							<td><span class="param-type">any</span></td>
+							<td class="last">
+									<p>element to remove from array</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Array</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="arrReverse" class="function public"><span class="name">arrReverse</span><span class="signature-params">( <span class="signature-param">arr</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{void}</span></h4>
+				<div class="summary"><p>Sorts an array of strings, numbers, or dates.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Sorts an array of strings, numbers, or dates in descending order. MUTATES original array.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>arr</code></td>
+							<td><span class="param-type">Array</span></td>
+							<td class="last">
+									<p>Array of strings, numbers, or date strings/objects.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">void</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><ul>
+			<li>Sorted array (mutates original array).</li>
+			</ul></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="arrSort" class="function public"><span class="name">arrSort</span><span class="signature-params">( <span class="signature-param">arr</span> [,&nbsp;<span class="signature-param">asc</span>&nbsp;]&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{void}</span></h4>
+				<div class="summary"><p>Sorts an array of strings, numbers, or dates.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Sorts an array of strings, numbers, or dates in ascending or descending order. MUTATES original array.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Attributes</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>arr</code></td>
+							<td><span class="param-type">Array</span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+									<p>Array of strings, numbers, or date strings/objects.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>asc</code></td>
+							<td><span class="param-type">boolean</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>true</td>
+							<td class="last">
+									<p>Sort ascending (true) or descending (false).</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">void</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><ul>
+			<li>Sorted array (mutates original array).</li>
+			</ul></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="arrSplice" class="function public"><span class="name">arrSplice</span><span class="signature-params">( <span class="signature-param">haystack</span>, <span class="signature-param">needle</span>, <span class="signature-param">pos</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{void}</span></h4>
+				<div class="summary"><p>Add element to array.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Add element to array at position &quot;pos&quot;. MUTATES the existing array.
+			ie: Add field name string to list of field names at position &quot;pos&quot;. Return new list of field names.</p>
+			<p>MUTATES existing array.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>haystack</code></td>
+							<td><span class="param-type">Array</span></td>
+							<td class="last">
+									<p>array to add element to</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>needle</code></td>
+							<td><span class="param-type">any</span></td>
+							<td class="last">
+									<p>element to add to array</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>pos</code></td>
+							<td><span class="param-type">number</span></td>
+							<td class="last">
+									<p>position in array to add element</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">void</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="arrUnique" class="function public"><span class="name">arrUnique</span><span class="signature-params">( <span class="signature-param">arr</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Array}</span></h4>
+				<div class="summary"><p>Filter array to unique values.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Filter an array down to an array of unique values</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>arr</code></td>
+							<td><span class="param-type">Array</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Array</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="dn2Title" class="function public"><span class="name">dn2Title</span><span class="signature-params">( <span class="signature-param">str</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+				<div class="summary"><p>Converts a string with underscores to title case.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Converts a string to title case by replacing '_' with a ' ' and applying capitalization to each word.
+			Use to convert Fulcrum data_name strings to title case.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>str</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>The input string.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><ul>
+			<li>The string converted to title case.</li>
+			</ul></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="dt2iso" class="function public"><span class="name">dt2iso</span><span class="signature-params">( <span class="signature-param">dt</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+				<div class="summary"><p>Convert Date to ISO string.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Convert javascript date/unix timestamp to ISO string with time and timezone stripped
+			strips time and timezone from ISO string.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>dt</code></td>
+							<td><span class="param-type">Date</span></td>
+							<td class="last">
+									<p>ISO date in string format</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="dtAddDays" class="function public"><span class="name">dtAddDays</span><span class="signature-params">( <span class="signature-param">dt</span>, <span class="signature-param">days</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Date}</span></h4>
+				<div class="summary"><p>Adds days to a date.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Adds a number of days to a date and returns the new date.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>dt</code></td>
+							<td><span class="param-type">Date</span> | <span class="param-type">string</span></td>
+							<td class="last">
+									<p>The starting date (Date object or date string).</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>days</code></td>
+							<td><span class="param-type">number</span></td>
+							<td class="last">
+									<p>Number of days to add.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Date</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><ul>
+			<li>The new Date object.</li>
+			</ul></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="dtDaysDiff" class="function public"><span class="name">dtDaysDiff</span><span class="signature-params">( <span class="signature-param">dt1</span>, <span class="signature-param">dt2</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{number}</span></h4>
+				<div class="summary"><p>Calculate the difference in days between two dates.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Calculate the difference in days between two dates.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>dt1</code></td>
+							<td><span class="param-type">Date</span></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>dt2</code></td>
+							<td><span class="param-type">Date</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">number</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="dtMonthBounds" class="function public"><span class="name">dtMonthBounds</span><span class="signature-params">( <span class="signature-param">dt</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Object}</span></h4>
+				<div class="summary"><p>Get first and last day of month for a given date.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Returns the first and last day of the month for a given date.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>dt</code></td>
+							<td><span class="param-type">Date</span> | <span class="param-type">string</span></td>
+							<td class="last">
+									<p>A Date object or date string.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Object</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="dtStrip" class="function public"><span class="name">dtStrip</span><span class="signature-params">( <span class="signature-param">str</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+				<div class="summary"><p>Strip timezone and time from ISO String date.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Strip timezone and time from ISO date and time in string format</p>
+			<p>ie: '2024-09-09T16:23:47Z' returns '2024-09-09'</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>str</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>ISO date in string format</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="flipKVpair" class="function public"><span class="name">flipKVpair</span><span class="signature-params">( <span class="signature-param">obj</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{*}</span></h4>
+				<div class="summary"><p>Flip Key:Value pair in an object of pair objects.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Input is an OBJECT of objects not an array of objects.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>obj</code></td>
+							<td><span class="param-type">*</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">*</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="formatAddress" class="function public"><span class="name">formatAddress</span><span class="signature-params">( <span class="signature-param">val</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+				<div class="summary"><p>Format fulcrum address object to us address string.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Formats a fulcrum address object into a us address formated string.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>val</code></td>
+							<td><span class="param-type">Object</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="formatVal" class="function public"><span class="name">formatVal</span><span class="signature-params">( <span class="signature-param">val</span> [,&nbsp;<span class="signature-param">naVal</span>&nbsp;]&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+				<div class="summary"><p>Format unknown value to Merjent standard formatted String.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Useful for values returned from Query API or REPEATABLEVALUES.
+			ie: a string '2011-10-05T14:48:00.000Z' returns '011-10-05&quot;
+			ie: an array as a string 'apples,oranges,bananas&quot; returns 'apples, oranges, bananas'
+			This function is intended for values that unknown values that are not returned from a fulcrum field. (for example from an HTTPS request).
+			For values from a fulcrum field use the fldVal method.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Attributes</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>val</code></td>
+							<td><span class="param-type">any</span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>naVal</code></td>
+							<td><span class="param-type">string</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td></td>
+							<td class="last">
+									<p>optional value for null, undifined and empty stings. DEFAULTS to '---'</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="html" class="function public"><span class="name">html</span><span class="signature-params">( <span class="signature-param">strings</span>, <span class="signature-param">...vals</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{*}</span></h4>
+				<div class="summary"><p>Removes newlines and trims whitespace from template literal.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Useful for embedding HTML snippets in JavaScript without extra whitespace or newlines.
+			removes all newline characters (\r and \n).
+			removes any leading or trailing whitespace.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Attributes</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>strings</code></td>
+							<td><span class="param-type">string</span></td>
+								<td class="attributes"></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>vals</code></td>
+							<td><span class="param-type">Object</span></td>
+								<td class="attributes">&lt;repeatable&gt;<br/></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">*</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="isBlank" class="function public"><span class="name">isBlank</span><span class="signature-params">( <span class="signature-param">val</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{boolean}</span></h4>
+				<div class="summary"><p>Check if variable is blank.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Check if variable is undefined, null or '' (empty string) OR if it is an Array if it has a length of 0 OR if it is an Object if it has an Object.keys() length of 0</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>val</code></td>
+							<td><span class="param-type">any</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">boolean</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="isDate" class="function public"><span class="name">isDate</span><span class="signature-params">( <span class="signature-param">val</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{boolean}</span></h4>
+				<div class="summary"><p>Determines if a value is a valid Date object or a valid date string.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>returns true if val is a Date object or a valid date string.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>val</code></td>
+							<td><span class="param-type">any</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">boolean</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="isInstance" class="function public"><span class="name">isInstance</span><span class="signature-params">( <span class="signature-param">obj</span>, <span class="signature-param">ClassConstructor</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Boolean}</span></h4>
+				<div class="summary"><p>Checks if object is an instance of a specific class.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Wrapper for instanceof operator.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>obj</code></td>
+							<td></td>
+							<td class="last">
+									<p>Object to check</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>ClassConstructor</code></td>
+							<td></td>
+							<td class="last">
+									<p>Class constructor</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Boolean</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="isISOdt" class="function public"><span class="name">isISOdt</span><span class="signature-params">( <span class="signature-param">str</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{boolean}</span></h4>
+				<div class="summary"><p>Check if string is in ISO 8601 date format.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Checks if string is in the format of an ISO 8601 date format
+			ie: '2011-10-05T14:48:00.000Z'</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>str</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">boolean</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="isNumber" class="function public"><span class="name">isNumber</span><span class="signature-params">( <span class="signature-param">val</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{boolean}</span></h4>
+				<div class="summary"><p>Determines if a value is a number.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Determines if a value is a number (not NaN, not a string).</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>val</code></td>
+							<td><span class="param-type">any</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">boolean</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="iso2dt" class="function public"><span class="name">iso2dt</span><span class="signature-params">( <span class="signature-param">str</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Date}</span></h4>
+				<div class="summary"><p>Convert ISO to Date.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Convert ISO date in string format to javascript date/unix timestamp.
+			Strips time and timezone if present before conversion.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>str</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>ISO date in string format</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Date</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="padZero" class="function public"><span class="name">padZero</span><span class="signature-params">( <span class="signature-param">val</span>, <span class="signature-param">length</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+				<div class="summary"><p>Add leading zeroes to a number(or string number).</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Pads a number or string with leading zeroes to reach a specified total length.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>val</code></td>
+							<td><span class="param-type">number</span> | <span class="param-type">string</span></td>
+							<td class="last">
+							</td>
+						</tr>
+						<tr>
+								<td><code>length</code></td>
+							<td><span class="param-type">number</span></td>
+							<td class="last">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-example"><h5>Examples</h5>		<div class="example-code">
+						<pre class="prettyprint source language-javascript"><code class="language-javascript">M.padZero(1.35,5) //returns: &quot;001.35&quot;</code></pre>
+					</div>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="rows2Sorted" class="function public"><span class="name">rows2Sorted</span><span class="signature-params">( <span class="signature-param">arr</span>, <span class="signature-param">prop</span> [,&nbsp;<span class="signature-param">asc</span> [,&nbsp;<span class="signature-param">type</span>&nbsp;]&nbsp;]&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Array.&lt;Object>}</span></h4>
+				<div class="summary"><p>Sorts an array of <strong>Objects</strong>.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Sorts an array of objects by a given property, or by value if objects contain only one key:value pair and prop is null.
+			Automatically sorts as number if type is 'number' or values are numbers,
+			and as date if type is 'date' or values are valid dates.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Attributes</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>arr</code></td>
+							<td><span class="param-type">Array.&lt;Object></span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+									<p>Array of objects to sort.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>prop</code></td>
+							<td><span class="param-type">string</span> | <span class="param-type">null</span></td>
+								<td class="attributes"></td>
+								<td></td>
+							<td class="last">
+									<p>Property name to sort by, or null to sort by value if objects have only one key:value pair.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>asc</code></td>
+							<td><span class="param-type">boolean</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>true</td>
+							<td class="last">
+									<p>Sort ascending (true) or descending (false).</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>type</code></td>
+							<td><span class="param-type">'string'</span> | <span class="param-type">'number'</span> | <span class="param-type">'date'</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>&#x27;string&#x27;</td>
+							<td class="last">
+									<p>Type of property to sort by.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Array.&lt;Object></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><ul>
+			<li>Sorted array (new array, does not mutate original).</li>
+			</ul></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="rowsFind" class="function public"><span class="name">rowsFind</span><span class="signature-params">( <span class="signature-param">rows</span>, <span class="signature-param">lookupProp</span>, <span class="signature-param">val</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Array.&lt;Object>}</span></h4>
+				<div class="summary"><p>Find objects in array by property value.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Finds objects with property matching lookup value in an array of objects and returns that object.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>rows</code></td>
+							<td><span class="param-type">Array.&lt;Object></span></td>
+							<td class="last">
+									<p>The array of objects to search.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>lookupProp</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>The property to look up in the objects.</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>val</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>The value to match against the property.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Array.&lt;Object></span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="strAfter" class="function public"><span class="name">strAfter</span><span class="signature-params">( <span class="signature-param">val</span>, <span class="signature-param">search</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+				<div class="summary"><p>Return slice of string AFTER <strong>FIRST</strong> occurence of search string.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Useful for getting <strong>middle</strong> section of text after underscore in data_name.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>val</code></td>
+							<td><span class="param-type">string</span></td>
+								<td></td>
+							<td class="last">
+									<p>string to search IN</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>search</code></td>
+							<td><span class="param-type">string</span></td>
+								<td>_</td>
+							<td class="last">
+									<p>string to search FOR in val</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="strBefore" class="function public"><span class="name">strBefore</span><span class="signature-params">( <span class="signature-param">val</span>, <span class="signature-param">search</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+				<div class="summary"><p>Return slice of string BEFORE <strong>FIRST</strong> occurence of search string.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Useful for getting prefix of text before first underscore in data_name.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>val</code></td>
+							<td><span class="param-type">string</span></td>
+								<td></td>
+							<td class="last">
+									<p>string to search IN</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>search</code></td>
+							<td><span class="param-type">string</span></td>
+								<td>_</td>
+							<td class="last">
+									<p>string to search FOR in val</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="strProper" class="function public"><span class="name">strProper</span><span class="signature-params">( <span class="signature-param">word</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+				<div class="summary"><p>Capitalizes the first character of a word</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Capitalizes the first character of a word and converts the rest to lowercase.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>word</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>The word to capitalize.</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><ul>
+			<li>The capitalized word.</li>
+			</ul></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id="strSuff" class="function public"><span class="name">strSuff</span><span class="signature-params">( <span class="signature-param">val</span>, <span class="signature-param">search</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{string}</span></h4>
+				<div class="summary"><p>Return slice of string AFTER <strong>LAST</strong> occurence of search string.</p></div></dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Useful for getting suffix of text after last underscore in data_name.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+							<th>Default</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>val</code></td>
+							<td><span class="param-type">string</span></td>
+								<td></td>
+							<td class="last">
+									<p>string to search IN</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>search</code></td>
+							<td><span class="param-type">string</span></td>
+								<td>_</td>
+							<td class="last">
+									<p>string to search FOR in val</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"></div>
+								</div>
+							</div>
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
+							</article>
+					</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+				<div class="copyright"> </div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on 20th Sep 2025 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
