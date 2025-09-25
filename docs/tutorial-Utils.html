@@ -1,5 +1,30 @@
 <!-- start:readme.hbs -->
 <!DOCTYPE html>
+<style>
+	.copy-code-button{
+		display:block;
+		background-color:#f5f5f5;
+		border-bottom-color:#e1e1e8;
+		border-left-color:#e1e1e8;
+		border-bottom-width:0.8px;
+		border-left-width:0.8px;
+		border-top-width:0;
+		border-right-width:0;
+		border-bottom-left-radius:4px;
+		height: auto;
+		width:auto;
+		position: absolute;
+		top:0;
+		right: 0;
+		margin:0 0 auto auto;
+		padding: 5px 8px;
+	}
+
+	pre:has(code){
+		position: relative;
+		padding-top:30px;
+	}
+</style>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -145,4 +170,45 @@
 	
 </body>
 </html>
+<script>
+	// This script would run after the Markdown has been rendered to HTML
+	document.addEventListener('DOMContentLoaded', () => {
+		const codeBlocks = document.querySelectorAll('pre code');
+
+		codeBlocks.forEach(codeBlock => {
+			const copyButton = document.createElement('button');
+			copyButton.textContent = 'Copy';
+			copyButton.className = 'copy-code-button'; // Add a class for styling
+
+			copyButton.addEventListener('mouseover', () => {
+			// Actions to perform when the mouse hovers over the button
+			copyButton.style.backgroundColor = '#337ab7'; // Change background color
+			copyButton.style.color = '#fff';
+			});
+
+			// Add a mouseout event listener
+			copyButton.addEventListener('mouseout', () => {
+			// Actions to perform when the mouse leaves the button
+			copyButton.style.backgroundColor = ''; // Reset background color
+			copyButton.style.color = '';
+			});
+
+			copyButton.addEventListener('click', async () => {
+				try {
+					await navigator.clipboard.writeText(codeBlock.textContent);
+					copyButton.textContent = 'Copied!';
+					setTimeout(() => {
+						copyButton.textContent = 'Copy';
+					}, 1500); // Reset button text after a delay
+				} catch (err) {
+					console.error('Failed to copy text: ', err);
+					// Fallback for older browsers if needed
+				}
+			});
+
+			// Append the button (adjust placement as needed)
+			codeBlock.parentNode.appendChild(copyButton); 
+		});
+	});
+</script>
 <!-- end:readme.hbs -->
