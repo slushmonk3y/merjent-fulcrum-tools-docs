@@ -114,13 +114,13 @@
 			<article><h1>Change Log</h1>
 <p>All notable changes to this project will be documented in this file.</p>
 <h2>[0.4.9] - 2025-11-03</h2>
-<h3>Breaking Changes</h3>
+<h3>🔥 Breaking Changes</h3>
 <ul>
 <li>Renamed <code>src/Mtools/Helpers.js</code> to <code>src/Mtools/Utils.js</code></li>
 <li>Renamed <code>src/helpersMtools.js</code> to <code>src/utilsMtools.js</code> (exports changed from <code>H</code> to <code>U</code>)</li>
 <li><code>SecOpt.html()</code> method renamed to <code>SecOpt.toHtml()</code></li>
 </ul>
-<h3>Refactored</h3>
+<h3>♻️ Refactored</h3>
 <ul>
 <li>ReportTemplateBlocks converted to static class with static methods
 <ul>
@@ -132,31 +132,32 @@
 <li>Changed <code>formatVal</code> to <code>fVal</code> throughout</li>
 <li>Changed <code>this.isInstance(secOpt, SecOpt)</code> to <code>secOpt instanceof SecOpt</code></li>
 </ul>
-<h3>Added</h3>
+<h3>✨ Added</h3>
 <ul>
 <li>New <code>buildBullets()</code> method in ReportHelpers to convert paragraphs to HTML bullet lists</li>
 <li>Added <code>Convert-JSMultilineStrings</code> PowerShell function to build script for flattening template literals</li>
 <li>Added custom CSS styling for bullet lists (ul/li) in MJNT_Report.css</li>
 <li>Added terser configuration to package.json with class/function name preservation</li>
 </ul>
-<h3>Changed</h3>
+<h3>🔧 Changed</h3>
 <ul>
 <li>Build process now uses <code>npx</code> for rexreplace and terser commands</li>
 <li>Build process now flattens ReportTemplateBlocks_WORKING.js to ReportTemplateBlocks.js</li>
 <li>Moved all dependencies to devDependencies in package.json</li>
 <li>Updated rexreplace from 7.1.11 to ^7.1.13</li>
 </ul>
-<h3>Documentation</h3>
+<h3>📚 Document</h3>
 <ul>
 <li>Updated Merjent App Tutorial with information about changing field names and data names</li>
 <li>Added snippet layout for data events</li>
 <li>Updated CHANGELOG with complete git history from version 0.3.0</li>
 </ul>
 <h2>[0.4.8] - 2025-10-27</h2>
+<h3>📚 Document</h3>
 <ul>
 <li>Adjusted some JSDOC inaccuracies</li>
 </ul>
-<h3>Added</h3>
+<h3>✨ Added</h3>
 <ul>
 <li>Added restrictNewRecords property to MerjentApp</li>
 </ul>
@@ -171,7 +172,7 @@
 </li>
 <li>MloadRecords updated to reflect changes in Fulcrum LOADRECORDS expression</li>
 </ul>
-<h3>Breaking Change</h3>
+<h3>🔥 Breaking Change</h3>
 <ul>
 <li>For clarity and naming consistency the following methods had names changed.
 <ul>
@@ -209,7 +210,7 @@
 </ul>
 </li>
 </ul>
-<h3>Changed</h3>
+<h3>🔧 Changed</h3>
 <ul>
 <li>MloadRecords
 <ul>
@@ -221,7 +222,7 @@
 </ul>
 </li>
 </ul>
-<h3>Refactor</h3>
+<h3>♻️ Refactor</h3>
 <ul>
 <li>getRepDn moved to FulcrumHelpers class</li>
 <li>makeDnsRow() refactored</li>
@@ -229,7 +230,7 @@
 <li>makeFvDict() refactored</li>
 <li>Template Strings for PDF report generation moved to separate class: ReportTemplateBlocks</li>
 </ul>
-<h3>Document</h3>
+<h3>📚 Document</h3>
 <ul>
 <li>Split tutorial into tree
 <ul>
@@ -240,42 +241,62 @@
 <li>JSDOC summary tags added to all methods</li>
 </ul>
 <h2>[0.4.5] - 2025-09-29</h2>
+<h3>🔧 Changed</h3>
 <ul>
 <li>Updated buildPkg.ps1 to add copy button to tutorials</li>
 </ul>
 <h2>[0.4.5] - 2025-09-25</h2>
+<h3>📚 Document</h3>
 <ul>
 <li>Updated read-me</li>
 </ul>
 <h2>[0.4.5] - 2025-09-20</h2>
+<h3>🔧 Changed</h3>
+<ul>
+<li>Updated MloadRecs class to include a separate initiator method. One for getting form field schema on load and one to get field schema and immediately load all recs on load.</li>
+</ul>
+<h3>♻️ Refactor</h3>
 <ul>
 <li>Converted Mfld, MfldColl and SecOpt to proper class format</li>
-<li>Updated MloadRecs class to include a separate initiator method. One for getting form field schema on load and one to get field schema and immediately load all recs on load.</li>
+</ul>
+<h3>📚 Document</h3>
+<ul>
 <li>Updated JSDOC comments throughout</li>
 <li>Updated read-me</li>
 </ul>
 <h2>[0.4.4] - 2025-09-15</h2>
 <ul>
-<li>Dev branch test</li>
+<li>Dev branch Git test</li>
 </ul>
 <h2>[0.4.4] - 2025-09-11</h2>
 <ul>
+<li>Testing Git dev branch pull</li>
+</ul>
+<h3>🐛 Fix</h3>
+<ul>
 <li>Bugfixes in SecOpts Class</li>
-<li>Testing dev branch pull</li>
 </ul>
 <h2>[0.4.4] - 2025-09-09</h2>
+<h3>♻️ Refactor</h3>
 <ul>
 <li>Replaced most uses of .forEach method with for...of...</li>
+</ul>
+<h3>📚 Document</h3>
+<ul>
 <li>Updated readme.md</li>
+</ul>
+<h3>✨ Added</h3>
+<ul>
 <li>Created SecOpts class to replace object used in parameters of ReportHelpers methods</li>
 <li>Added digElements method to FulcrumHelpers</li>
 </ul>
 <h2>[0.4.3] - 2025-08-27</h2>
+<h3>♻️ Refactor</h3>
 <ul>
 <li>Reorganized file structure</li>
 </ul>
 <h2>[0.4.3] - 2025-08-20</h2>
-<h3>Added</h3>
+<h3>✨ Added</h3>
 <ul>
 <li>Added .disableNewRecordCreation property to mApp</li>
 <li>Added .defaultPermissionLevel property to mApp</li>
@@ -285,105 +306,127 @@
 <li>MLoadRecs class was added</li>
 <li>MfldColl, Mfld, and SecOpt classes were exposed in Report Mtools</li>
 </ul>
-<h3>Fixed</h3>
+<h3>🐛 Fix</h3>
 <ul>
 <li>Fixed bug with mFld not printing choice_values in certain situations</li>
 <li>Helpers class was cleaned up and various small bugs fixed</li>
 </ul>
-<h3>Breaking Changes</h3>
+<h3>🔥 Breaking Changes</h3>
 <ul>
 <li>The following method names were changed:
 <ul>
-<li>remVarr =&gt; arrRem</li>
-<li>getObjs =&gt; rowsFind</li>
-<li>countArrItems =&gt; arrCountItems</li>
-<li>sortNum =&gt; arrSort</li>
-<li>reverseNum =&gt; arrReverse</li>
-<li>objArrSort =&gt; rowsSort</li>
-<li>dupList =&gt; arrListDups</li>
-<li>toTitleCase =&gt; dn2Title</li>
-<li>capitalizeWord =&gt; strProper</li>
-<li>addDays =&gt; dtAddDays</li>
-<li>daysDiff =&gt; dtDaysDiff</li>
+<li>remVarr -&gt; arrRem</li>
+<li>getObjs -&gt; rowsFind</li>
+<li>countArrItems -&gt; arrCountItems</li>
+<li>sortNum -&gt; arrSort</li>
+<li>reverseNum -&gt; arrReverse</li>
+<li>objArrSort -&gt; rowsSort</li>
+<li>dupList -&gt; arrListDups</li>
+<li>toTitleCase -&gt; dn2Title</li>
+<li>capitalizeWord -&gt; strProper</li>
+<li>addDays -&gt; dtAddDays</li>
+<li>daysDiff -&gt; dtDaysDiff</li>
 </ul>
 </li>
 </ul>
 <h2>[0.4.0] - 2025-06-05</h2>
-<h3>Added</h3>
+<h3>✨ Added</h3>
 <ul>
 <li>Added JSDOC documentation</li>
 <li>Added Report HTML Boiler Plates to Info</li>
 <li>Added optional custom css property to ReportHelpers.buildRepeatableSubsec() and ReportHelpers.getSecHtml()</li>
 </ul>
-<h3>Changed</h3>
+<h3>🔧 Changed</h3>
 <ul>
 <li>Updated Helpers.isBlank()</li>
 <li>Updated ReportHelpers.getFormRows() to handle excluded fields (ie. exclude field used for subsection title with ReportHelpers.buildRepeatableSubsec())</li>
 <li>Replaced string concatenation with template strings in RequestHelpers and other classes</li>
 </ul>
 <h2>[0.3.9] - 2025-05-01</h2>
+<h3>🔧 Changed</h3>
 <ul>
 <li>Updated updateMtools.py to include pushing updates to report template script as well as data events</li>
 </ul>
 <h2>[0.3.9] - 2025-04-30</h2>
-<h3>Added</h3>
+<h3>✨ Added</h3>
 <ul>
 <li>Updated MerjentApp enterReportID() to include prefix</li>
 <li>Added getRLrecords() to ReportHelpers</li>
 <li>Added addItemNo() to enumerate photos</li>
 <li>Added buildPhotoObjFromRows() to build photoObj from query response</li>
 </ul>
-<h3>Fixed</h3>
+<h3>🐛 Fix</h3>
 <ul>
 <li>Fixed missing timestamp in enterReportID()</li>
 </ul>
 <h2>[0.3.8] - 2025-03-28</h2>
+<h3>🐛 Fix</h3>
 <ul>
 <li>Fixed still more bugs in isBlank()</li>
+</ul>
+<h3>♻️ Refactor</h3>
+<ul>
 <li>Adjusted MJNT_Report.css style</li>
 <li>Modified MerjentApp to turn off updateStatus if dnSubmit = null</li>
 </ul>
 <h2>[0.3.8] - 2025-03-27</h2>
+<h3>🐛 Fix</h3>
 <ul>
 <li>Fixed more bugs in isBlank()</li>
 <li>Adjusted MJNT_Report.css style for photo width to fit 3 photos per page</li>
 </ul>
 <h2>[0.3.8] - 2025-03-25</h2>
+<h3>🐛 Fix</h3>
 <ul>
 <li>Fixed isBlank() method</li>
+</ul>
+<h3>🔧 Changed</h3>
+<ul>
 <li>Updated ReportHelpers and MNJT_Report.css photo grid styling</li>
 </ul>
 <h2>[0.3.8] - 2025-03-23</h2>
-<h3>Added</h3>
+<h3>✨ Added</h3>
 <ul>
 <li>Added minimum jsdoc comments</li>
 <li>Merged Mtools and MerjentApp classes in module.exports</li>
 </ul>
-<h3>Changed</h3>
+<h3>🐛 Fix</h3>
 <ul>
 <li>Updated Helpers.isBlank() to check for empty objects and arrays</li>
+</ul>
+<h3>♻️ Refactor</h3>
+<ul>
 <li>FulcrumHelpers.check4PhotoCaps() returns boolean as well as ALERT</li>
 <li>FulcrumHelpers.photoLandscape() returns boolean as well as ALERT</li>
 <li>FulcrumHelpers.photoLandscape() updated properties to be more readable</li>
 </ul>
 <h2>[0.3.7] - 2025-03-22</h2>
+<h3>♻️ Refactor</h3>
 <ul>
 <li>Changed module and class names to read more easily and re-organized package structure</li>
+</ul>
+<h3>📚 Document</h3>
+<ul>
 <li>Started adding jsdoc comments</li>
 <li>Added foodoc jsdoc template</li>
 </ul>
 <h2>[0.3.6] - 2025-03-18</h2>
+<h3>♻️ Refactor</h3>
 <ul>
 <li>Changed dir structure src/Mapp and src/Mtools</li>
 <li>Added src/jsdoc.json for JSDOC config</li>
+</ul>
+<h3>🐛 Fix</h3>
+<ul>
 <li>Fixed buildPkg.ps1 to replace version in package.json</li>
 </ul>
 <h2>[0.3.5] - 2025-03-13</h2>
+<h3>🗑️ Removed</h3>
 <ul>
 <li>Removed node_modules</li>
 </ul>
 <h2>[0.3.5] - 2025-03-13</h2>
-<h3>Added</h3>
+<h3>✨ Added</h3>
 <ul>
 <li>Added DataEventBoilerPlates Class
 <ul>
@@ -394,24 +437,15 @@
 <li>Added functions to convert repeatables and record links (from LOADRECORD) to objects</li>
 </ul>
 <h2>[0.3.3] - 2025-01-10</h2>
+<h3>♻️ Refactor</h3>
 <ul>
 <li>Merjent App is now es2015 class</li>
 </ul>
 <h2>[0.3.0] - 2025-01-03</h2>
+<h3>✨ Added</h3>
 <ul>
 <li>Initial Commit</li>
-</ul>
-<h2>[Template] - 2025-10-27</h2>
-<h3>Changed</h3>
-<h4>Refactor</h4>
-<h4>Document</h4>
-<h4>Breaking Change</h4>
-<h3>Added</h3>
-<h4>Document</h4>
-<h3>Removed</h3>
-<h4>Deprecate</h4>
-<h3>Fixed</h3>
-<h4>Fix</h4></article>
+</ul></article>
 		</section>
 			</div>
 				<div class="col-md-3 side-content">
